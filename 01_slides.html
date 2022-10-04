@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>The SSRP and the Life Cycle of Reproducibility</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Fernando Hoces de la Guardia, BITSS" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# The SSRP and the Life Cycle of Reproducibility
+## BITSS Open Research Seminar
+### Fernando Hoces de la Guardia, BITSS
+### October 2022
+
+---
+
+
+background-image:  url(Images/tier.png), url(Images/ssrp-logo.png), url(Images/i4r.png)
+background-size: 25%, 35%, 25%
+background-position: 0% 50%, 50% 50%, 100% 50% 
+count:true
+
+
+
+&lt;style&gt;
+
+.center2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+pre.sourceCode {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+/*
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: blue;
+}
+*/
+&lt;/style&gt;
+
+
+
+&lt;style type="text/css"&gt;
+# CSS for including pauses in printed PDF output (see bottom of lecture)
+@media print {
+  .has-continuation {
+    display: block !important;
+  }
+}
+
+&lt;/style&gt;
+
+
+
+
+
+# Social Science Reproduction Platform (SSRP) 
+
+
+---
+background-image: url("Images/iceberg.jpg")
+background-size: 50%
+background-position: 100% 50%
+
+# .font90[Take-away From Project TIER's Talk]     
+
+
+.pull-left[
+.font130[
+ - We should document and test well our work as researchers (using the TIER protocol) so others can easily inspect and learn from our entire scholarly contribution
+
+ 
+ - Let's share the entire "iceberg" when producing new research
+ 
+ - But what about research that has already been published?
+ 
+ ]
+]
+
+
+
+---
+
+# Motivation: Prevent Loss of Knowledge  
+
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
+
+--
+   
+
+|       Stage       	|                         New Knowledge                        	|
+|:-----------------:	|:------------------------------------------------------------:	|
+|  &lt;/br&gt;&lt;/br&gt; 	|                                          	|
+| &lt;/br&gt;&lt;/br&gt;            	|  	|
+| &lt;/br&gt;&lt;/br&gt;           	|  	|
+| &lt;/br&gt;&lt;/br&gt;   	|  &lt;/br&gt;          	|
+
+
+
+
+---
+count:false 
+
+# Motivation: Prevent Loss of Knowledge  
+
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
+
+   
+
+|       Stage       	|                         New Knowledge                        	|
+|:-----------------:	|:------------------------------------------------------------:	|
+| Scope &lt;/br&gt; (select and verify) 	| Data and code exist?                                         	|
+| &lt;/br&gt;&lt;/br&gt;            	|  	|
+| &lt;/br&gt;&lt;/br&gt;           	|  	|
+| &lt;/br&gt;&lt;/br&gt;   	|  &lt;/br&gt;          	|
+
+---
+count:false 
+
+# Motivation: Prevent Loss of Knowledge  
+
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
+
+
+   
+
+|       Stage       	|                         New Knowledge                        	|
+|:-----------------:	|:------------------------------------------------------------:	|
+| Scope &lt;/br&gt; (select and verify) 	| Data and code exist?                                         	|
+| Assess            	| Degree of reproducibility for &lt;br&gt;specific part of the paper 	|
+| &lt;/br&gt;&lt;/br&gt;           	|  	|
+| &lt;/br&gt;&lt;/br&gt;   	|  &lt;/br&gt;          	|
+
+---
+count:false 
+
+# Motivation: Prevent Loss of Knowledge  
+
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
+
+
+   
+
+|       Stage       	|                         New Knowledge                        	|
+|:-----------------:	|:------------------------------------------------------------:	|
+| Scope &lt;/br&gt; (select and verify) 	| Data and code exist?                                         	|
+| Assess            	| Degree of reproducibility for &lt;br&gt;specific part of the paper 	|
+| Improve           	| E.g. fixed paths, libraries,&lt;br&gt;added missing files, etc.    	|
+| &lt;/br&gt;&lt;/br&gt;   	|  &lt;/br&gt;          	|
+
+---
+count:false 
+
+# Motivation: Prevent Loss of Knowledge  
+
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
+
+|       Stage       	|                         New Knowledge                        	|
+|:-----------------:	|:------------------------------------------------------------:	|
+| Scope &lt;/br&gt; (select and verify) 	| Data and code exist?                                         	|
+| Assess            	| Degree of reproducibility for &lt;br&gt;specific part of the paper 	|
+| Improve           	| E.g. fixed paths, libraries,&lt;br&gt;added missing files, etc.    	|
+| Test robustness   	| Results are robust to additional &lt;br&gt;specifications          	|
+
+.font120[
+.center[**Key challenge: Standardization**]
+]
+
+---
+count: true  
+background-image: url(Images/paper-claims.svg)
+background-size: 610px
+background-position: 75% 0%
+  
+# Standarized Scope of a Reproduction
+
+.pull-left[
+.font100[
+Each **reproduction attempt** is centered &lt;br&gt;
+around scientific **claims** (following [SCORE](https://replicats.research.unimelb.edu.au)). 
+
+One paper can contain several claims. 
+
+Each claim may be supported by various &lt;/br&gt;
+**display items**: tables, figures &amp; inline results.
+
+A reproduction attempt is at the claim level, &lt;br&gt;
+and reproducers must record their &lt;br&gt; 
+**specifications** of interest.  
+
+&lt;br&gt;&lt;br&gt;
+
+]
+                                
+                                  
+                                               DI: Display Item 
+                                                S: Specificaiton
+]
+
+---
+background-image:  url(Images/home_page.png)
+background-size: contain
+count:true
+
+.center[
+# Demo: [socialsciencereproduction.org]()
+]
+---
+background-image:  url(Images/stages.svg)
+background-size: contain
+
+# Stages
+
+
+---
+background-image: url(Images/scope.svg), url(Images/scope_paper.png)
+background-size: 400px,  700px
+background-position: 95% 100%, 0% 10%
+count:false
+
+# Scope
+
+---
+background-image: url(Images/scope.svg), url(Images/scope_paper2.png), url(Images/scope_paper.png)
+background-size: 400px, 500px, 700px
+background-position: 95% 100%, 90% 0%, 0% 10%
+count:false
+
+# Scope
+
+---
+background-image: url(Images/scope.svg), url(Images/scope_example.png), url(Images/scope_paper2.png)  , url(Images/scope_paper.png)
+background-size: 400px,  600px, 500px, 700px
+background-position: 95% 100%,  100% 75%,  90% 0%, 0% 10%
+count:true
+
+# Scope
+
+---
+background-image: url(Images/assess.svg), url(Images/assess_paper1.png)
+background-size: 400px, 120px
+background-position: 95% 100%, 0% 10%
+count:false
+
+# Standzarized Assessment 
+---
+background-image: url(Images/assess.svg), url(Images/assess_paper2.png)
+background-size: 400px,  120px
+background-position: 95% 100%, 0% 10%
+count:false
+
+
+# Standzarized Assessment 
+
+---
+background-image: url(Images/assess.svg), url(Images/assess_example1.png), url(Images/assess_paper2.png)
+background-size: 400px,  500px, 120px
+background-position: 95% 100%,  15% 50%, 0% 10%
+count:false
+
+
+# Standzarized Assessment 
+
+---
+background-image: url(Images/assess_example2.png), url(Images/assess.svg), url(Images/assess_example1.png)  , url(Images/assess_paper2.png)
+background-size:  600px, 400px,  500px, 120px 
+background-position: 100% 80%,95% 100%,    15% 50%, 0% 10%
+count:true
+
+
+
+# Standzarized Assessment 
+
+
+---
+background-image: url(Images/improve.svg)
+background-size: 700px
+background-position: 50% 20% 
+
+
+# Standarized Improvements
+
+&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
+
+## Three types of improvements: 
+
+.font130[
+
+1. Improvements at the paper level (e.g., improve documentation following [TIER's protocols](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation))
+2. Improvements at the display-item level  
+3. Specific future improvements   
+ ]
+
+---
+background-image: url(Images/robust.svg)
+background-size: 700px
+background-position: 50% 20% 
+
+
+# Robustness Checks 
+
+&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
+
+## Two main parts for robustness: 
+
+.font130[
+1. Increase the number of robustness checks
+2. Justify the appropriateness of a specific test
+ ]
+ 
+---
+background-image: url(Images/robust.svg), url("Images/robustness checks.svg")
+background-size: 300px, 500px
+background-position: 0% 100%, 100% 60%  
+
+# Robustness
+.font120[
+**Robustness checks:** any possible change in a computational choice, both in data analysis and data cleaning
+]
+--
+
+.font110[
+.pull-left[
+**Reasonable specifications** ([Simonsohn et. al., 2018](https://urisohn.com/sohn_files/wp/wordpress/wp-content/uploads/Paper-Specification-curve-2018-11-02.pdf)): 
+
+ 1. Sensible tests of the research question
+ 2. Expected to be statistically valid, and 
+ 3. Not redundant with other specifications in the set.
+
+Reproducers will be able to record two types of contributions: 
+- Mapping the universe of robustness checks
+- Proposing a specific robustness check
+]
+]
+---
+background-image:  url(Images/completed_repro1.png)
+background-size:   450px
+background-position:  0% 0%   
+count:false
+# .font90[Completed Reproduction: Generate Knowledge and Get Credit]
+
+
+
+---
+background-image: url(Images/completed_repro2.png), url(Images/completed_repro1.png)
+background-size:  300px, 450px
+background-position:  35% 0%, 0% 0%   
+count:false
+# .font90[Completed Reproduction: Generate Knowledge and Get Credit]
+
+---
+background-image: url(Images/completed_repro3.png) ,url(Images/completed_repro2.png), url(Images/completed_repro1.png)
+background-size:  600px ,  300px, 450px
+background-position:  100% 10%, 35% 0%, 0% 0%   
+count:true
+# .font90[Completed Reproduction: Generate Knowledge and Get Credit]
+
+.pull-right[
+
+.font130[
+ &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+ 
+ - **Share it:** Original authors, instructors, other researchers, add it to your CV
+ - **Discuss it:** Discourse forum for reproductions
+ - **Cite it:**    Each reproduction has a citable DOI
+ - [Example here](https://www.socialsciencereproduction.org/reproductions/40/published/index)
+ ]
+
+]
+
+
+---
+background-image:  url(Images/use1.png)
+background-size:  500px
+background-position:   0% 0%   
+count:false
+# How Do I Get Started?
+
+.center[
+.font120[
+    &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  [**Use it**](https://www.socialsciencereproduction.org) for your class &lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;or independent project
+]
+]
+
+---
+background-image: url(Images/use2.png), url(Images/use1.png)
+background-size:  600px, 500px
+background-position:  35% 100%, 0% 0%   
+count:false
+# How Do I Get Started?
+
+.center[
+.font120[
+    &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  [**Use it**](https://www.socialsciencereproduction.org) for your class &lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;or independent project
+]
+]
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+.font120[
+Consult the &lt;br&gt; supporting &lt;br&gt;
+[**guide**](https://bitss.github.io/ACRE/)
+]
+
+---
+background-image: url(Images/use3.png) ,url(Images/use2.png), url(Images/use1.png)
+background-size:  400px,  600px, 500px
+background-position:  100% 0%, 35% 100%, 0% 0%   
+count:true
+# How Do I Get Started?
+
+.center[
+.font120[
+    &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  [**Use it**](https://www.socialsciencereproduction.org) for your class &lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;or independent project
+]
+]
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+.font120[
+Consult the &lt;br&gt; supporting &lt;br&gt;
+[**guide**](https://bitss.github.io/ACRE/)
+]
+.right[
+.font120[
+[**Ask**](https://forum.socialsciencereproduction.org) questions
+]
+]
+
+---
+background-image: url(Images/metrics3.png)
+background-size:  contain
+count:true
+# Who Is Using The SSRP?
+
+
+---
+class: inverse, center, middle
+
+# .font140[ Thank You]
+
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=100%&gt;&lt;/html&gt;
+
+.font190[
+&lt;acre@berkeley.edu&gt;  
+&lt;fhoces@berkeley.edu&gt;
+]
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
