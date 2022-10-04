@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Accelerating Computational Reproducibility with the Social Science Reproduction Platform</title>
+    <title>The SSRP and the Life Cycle of Reproducibility</title>
     <meta charset="utf-8" />
     <meta name="author" content="Fernando Hoces de la Guardia, BITSS" />
     <script src="libs/header-attrs/header-attrs.js"></script>
@@ -13,19 +13,20 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Accelerating Computational Reproducibility with the Social Science Reproduction Platform
-## Conference on Teaching &amp; Research in Economic Education (CTREE), Chicago
+# The SSRP and the Life Cycle of Reproducibility
+## BITSS Open Research Seminar
 ### Fernando Hoces de la Guardia, BITSS
-### June 2022 | <a href="https://bitss.github.io/acre-slides-ctree2022/">slides</a>
+### October 2022
 
 ---
 
-background-image: url("Images/BITSSlogo.png"), url(Images/cega.png)
-background-size: contain, 200px
-background-position: 50% 100% , 100% 10% 
-count:true 
 
-#[BITSS](https://bitss.org)   
+background-image:  url(Images/tier.png), url(Images/ssrp-logo.png), url(Images/i4r.png)
+background-size: 25%, 35%, 25%
+background-position: 0% 50%, 50% 50%, 100% 50% 
+count:true
+
+
 
 &lt;style&gt;
 
@@ -82,81 +83,7 @@ pre.sourceCode {
 
 
 
-
-
-.pull-left[
-The Berkeley Initiative for Transparency in the Social Sciences works to improve &lt;/br&gt;the credibility of science by &lt;/br&gt;
-advancing transparency, &lt;/br&gt; reproducibility,  rigor, and &lt;/br&gt; ethics in research and policy analysis. 
-
-.font130[**Core ACRe**]
-  
-
- Aleks Bogdanoski  
- 
- Albert Chae
-
-Fernando Hoces  de la Guardia
- 
-Edward Miguel
- 
-Lars Vilhuber
- 
-]
-.pull-right[ .right[
-We are part of the Center for Effective Global Action ([CEGA](https://cega.berkeley.edu/)).   
- &lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
-
-
-
-.font130[[**Many Others**](https://bitss.github.io/ACRE/contributions.html#list-of-contributors-guidelines-content-and-source-code)]
-
-CEGA staff
-
-Undergrad and Graduate RAs
-
-Catalysts
-
-Outside Collaborators   
-(Researchers, Programmers)
-  ]]
- 
-
-
-
-
----
-name: motivation
-# Motivation 1: "Reproducibility Crisis"
-
-.font170[
-| Replication in Social Sciences&lt;br&gt;(same method, different sample) 	| Reproduction in Economics&lt;br&gt;(same data and methods) 	|
-|-------------------------------------------------------------------	|------------------------------------------------------	|
-| OSC ([2015](https://docs.google.com/document/d/1mm_4HZnEz_2Bh8XuiS2tpqCH08MFPyqUhi1baKPqR8Y/edit#heading=h.7vqf2cziid7z)): 30%-60%                      	                          | Chang &amp; Li ([2015](https://www.nowpublishers.com/article/Details/CFR-0053)): 43%                               	|
-| Camerer et. al. ([2016](https://science.sciencemag.org/content/351/6280/1433)): ~60%                                      	| Gertler et. al. ([2017](https://www.nature.com/articles/d41586-018-02108-9)): 14%                          	|
-| Nosek &amp; Camerer et. al. ([2018](https://www.nature.com/articles/s41562-018-0399-z)): ~60%                              	| Kingi et. al. ([2018](https://hautahi.com/static/docs/Replication_aejae.pdf)): 43%                            	|
-| Klein et. al. ([2018](https://journals.sagepub.com/doi/10.1177/2515245918810225)): 50%                                         	| Wood et. al. ([2018](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0209416#abstract0)): 25%                             	|
-&lt;br&gt;
-Card ([2022](https://doi.org/10.1257/aer.112.6.1773)) cites low reproducibility as a key driver behind the credibility (re)evolution in Economics
-
-]
-
----
-count:false
-# .font90[M2: More Inclusive Concept Scholarly Output]     
-
-
-.pull-left[
-.font120[
-    &lt;blockquote&gt;
-    Clarebout Principle:
-    &lt;/br&gt;&lt;/br&gt;
-    “An article about computational science in a scientific publication is not the scholarship itself, it’s merely scholarship advertisement. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.”
-&lt;/br&gt;&lt;/br&gt;    
-.right[  &lt;cite&gt; Buckheit and D.L. Donoho (1995, [2009](https://academiccommons.columbia.edu/doi/10.7916/D8QZ2MDS/download))&lt;/cite&gt; ]
-    &lt;/blockquote&gt;
-]
-]
-
+# Social Science Reproduction Platform (SSRP) 
 
 
 ---
@@ -164,46 +91,28 @@ background-image: url("Images/iceberg.jpg")
 background-size: 50%
 background-position: 100% 50%
 
-# .font90[M2: More Inclusive Concept Scholarly Output]     
+# .font90[Take-away From Project TIER's Talk]     
+
 
 .pull-left[
-.font120[
-    &lt;blockquote&gt;
-    Clarebout Principle:
-    &lt;/br&gt;&lt;/br&gt;
-    “An &lt;b&gt;article&lt;/b&gt; about computational science in a scientific publication is not the scholarship itself, &lt;b&gt;it’s merely scholarship advertisement&lt;/b&gt;. The actual &lt;b&gt;scholarship is the complete software development environment and the complete set of instructions which generated the figures&lt;/b&gt;.”
-&lt;/br&gt;&lt;/br&gt;    
-.right[  &lt;cite&gt; Buckheit and D.L. Donoho (1995, [2009](https://academiccommons.columbia.edu/doi/10.7916/D8QZ2MDS/download))&lt;/cite&gt; ]
-    &lt;/blockquote&gt;
-]
-]
----
-# .font90[M2: More Inclusive Concept Scholarly Output]     
-
 .font130[
-Potential benefits of following the Clarebout Principle
+ - We should document and test well our work as researchers (using the TIER protocol) so others can easily inspect and learn from our entire scholarly contribution
 
-Well discussed potential positive effects on:
-- Pedagogy  
-- Incremental generation of knowledge 
-]
---
-
-.font130[
-Under discussed:
-
-- Possible positive effect on diversity, equity and inclusion: no connections or language skills ("appropriate politeness") required to obtain materials 
+ 
+ - Let's share the entire "iceberg" when producing new research
+ 
+ - But what about research that has already been published?
+ 
+ ]
 ]
 
-???
-An under discussed benefit of this principle is that increases access to knowledge for students who are outside of elite schools (no connections or "appropriate politeness" required to obtain materials).   
 
 
 ---
 
-# M3: Prevent Loss of Knowledge  
+# Motivation: Prevent Loss of Knowledge  
 
-Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. 
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
 
 --
    
@@ -221,9 +130,9 @@ Every semester, graduate students around **the world** take an Empirical/Applied
 ---
 count:false 
 
-# M3: Prevent Loss of Knowledge  
+# Motivation: Prevent Loss of Knowledge  
 
-Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. 
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
 
    
 
@@ -237,9 +146,9 @@ Every semester, graduate students around **the world** take an Empirical/Applied
 ---
 count:false 
 
-# M3: Prevent Loss of Knowledge  
+# Motivation: Prevent Loss of Knowledge  
 
-Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. 
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
 
 
    
@@ -254,9 +163,9 @@ Every semester, graduate students around **the world** take an Empirical/Applied
 ---
 count:false 
 
-# M3: Prevent Loss of Knowledge  
+# Motivation: Prevent Loss of Knowledge  
 
-Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. 
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
 
 
    
@@ -271,9 +180,9 @@ Every semester, graduate students around **the world** take an Empirical/Applied
 ---
 count:false 
 
-# M3: Prevent Loss of Knowledge  
+# Motivation: Prevent Loss of Knowledge  
 
-Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. 
+.font120[Every semester, graduate students around **the world** take an Empirical/Applied [`...`] course (e.g., Labor Economics, Social Psychology). A typical assignment consists of reproducing the results of a paper and, possibly, testing the robustness of its results. ]
 
 |       Stage       	|                         New Knowledge                        	|
 |:-----------------:	|:------------------------------------------------------------:	|
@@ -282,96 +191,9 @@ Every semester, graduate students around **the world** take an Empirical/Applied
 | Improve           	| E.g. fixed paths, libraries,&lt;br&gt;added missing files, etc.    	|
 | Test robustness   	| Results are robust to additional &lt;br&gt;specifications          	|
 
-
----
-
-# M3: Prevent Loss of Knowledge  
-.font140[
-- In each of the previous steps there was valuable new knowledge 
-- This knowledge is not usually disseminated  
-  - End of semester report, or presentation that is not published. 
-  - Language across courses is not standard (reproduction? replication?)
-  - Current attempts to record this are closer to a full paper format (see [Replication Wiki](https://replication.uni-goettingen.de/))
-- As a result there is a large amount of missed knowledge.  
-   - Each new semester, new students repeat similar excesses and have to reinvent the wheel.  
-   - Lost opportunity for building on top of previous exercises. 
-   - Lost opportunity for aggregating the new knowledge.
+.font120[
+.center[**Key challenge: Standardization**]
 ]
-
----
-name: guidelines
-
-# Context for ACRE
-
-.font120[
-- American Economics Association (AEA) creates first data policy in 2006.  
-
-    - Must publish some data (waivers available)
-    ]
-    
---
-.font120[
-- AEA updates [policy in 2019](https://www.aeaweb.org/journals/policies/data-code/). 
-    - Must post all data and code. Publication is conditional on verifying reproducibility (if confidential: must document extensively) 
-    - A new requirement is to post all cleaning code, even for data that is not public
-    ]
---
-.font120[
-- We should expect high levels of computational reproducibility after 2019 (AEA). 
-]
-
---
-.font120[
-- We should not demand 100% reproducibility before, but we could identify the gaps and try to improve some. 
-]
----
-# .font90[**A**ccelerating **C**omputational **Re**producibility: Framework]
-
-## Beyond Binary Judgments    
-
-Reproductions can easily gravitate towards adversarial exchanges.
-  - Early career researchers (ECR) have incentives to emphasize unsuccessful reproductions 
-  - Original authors have a more senior position and can use it to deter in-depth reproductions from ECRs. 
-  - The media also focuses on eye-catching headlines
-
---
-
-
-### Our approach: 
-
-We do not want to say 
- &gt; "Paper X is (ir)reproducible"    
- 
-  
---
-We do want to say 
- &gt; "Result Y in paper X has a high/low level of reproducibility according to several reproduction attempts. Moreover, improvements have been made to the original reproduction package, increasing its reproducibility to a higher level" 
-
----
-count:false 
-
-# .font90[**A**ccelerating **C**omputational **Re**producibility: Framework]
-
-## Beyond Binary Judgments    
-
-Reproductions can easily gravitate towards adversarial exchanges.
-  - Early career researchers (ECR) have incentives to emphasize unsuccessful reproductions 
-  - Original authors have a more senior position and can use it to deter in-depth reproductions from ECRs. 
-  - The media also focuses on eye-catching headlines
-
-
-### Our approach: 
-
-We do not want to say 
- &gt; "Paper X is (ir)reproducible"    
- 
-  
-
-We do want to say 
- &gt; "Result Y in paper X has a high/low **level** of reproducibility according to **several** reproduction attempts. Moreover, **improvements** have been made to the original reproduction package, **increasing** its reproducibility to a higher level" 
-
-  
-
 
 ---
 count: true  
@@ -379,7 +201,7 @@ background-image: url(Images/paper-claims.svg)
 background-size: 610px
 background-position: 75% 0%
   
-# ACRe Framework
+# Standarized Scope of a Reproduction
 
 .pull-left[
 .font100[
@@ -395,117 +217,13 @@ A reproduction attempt is at the claim level, &lt;br&gt;
 and reproducers must record their &lt;br&gt; 
 **specifications** of interest.  
 
-Key challenge: **standardization** of concepts &lt;br&gt; 
-and formats.
-
+&lt;br&gt;&lt;br&gt;
 
 ]
                                 
                                   
                                                DI: Display Item 
                                                 S: Specificaiton
-]
-.pull-right[ 
-]
-
-
-
----
-count: true  
-
-# .font70[Large part of this exercise is about standardization]
-
-.pull-left[
-- Computational Reproduction (or Reproduction)
-
-- Replication (will not mention this term again!) 
-
-- Reproduction attempt
-
-- Reproduction package
-
-- Claim
-
-- Display item
-
-- Specification  
-
-- Preferred specification  
-
-- Raw data  
-
-- Analysis data
-]
-
-.pull-right[
-
-- Candidate paper 
-
-- Declared paper
-
-- Reproduction tree
-
-- Complete Workflow
-
-- Computationally Reproducible from Analytic data (CRA)
-
-- Computationally Reproducible from Raw data (CRR)
-
-- Reasonable test
-
-- Feasible test
-
-- Minimal effort
-
-]
-
----
-count: false  
-
-# .font70[Large part of this exercise is about standardization]
-
-.pull-left[
-- **Computational Reproduction (or Reproduction)**
-
-- **Replication (will not mention this term again!) **
-
-- Reproduction attempt
-
-- **Reproduction package**
-
-- Claim
-
-- Display item
-
-- Specification  
-
-- Preferred specification  
-
-- **Raw data**  
-
-- **Analysis data**
-]
-
-.pull-right[
-
-- **Candidate paper** 
-
-- **Declared paper**
-
-- Reproduction tree
-
-- Complete Workflow
-
-- Computationally Reproducible from Analytic data (CRA)
-
-- Computationally Reproducible from Raw data (CRR)
-
-- Reasonable test
-
-- Feasible test
-
-- Minimal effort
-
 ]
 
 ---
@@ -522,22 +240,6 @@ background-size: contain
 
 # Stages
 
----
-background-image: url(Images/select.svg),  url(Images/select_paper.png) 
-background-size: 400px,  700px
-background-position: 95% 100%,   0% 10%
-count:false
-
-# Select a paper
-
----
-background-image: url(Images/select.svg), url(Images/select_example.png), url(Images/select_paper.png) 
-background-size: 400px,  600px, 700px 
-background-position: 95% 100%,  100% 0%, 0% 10%
-count:true
-
-# Select a paper
-
 
 ---
 background-image: url(Images/scope.svg), url(Images/scope_paper.png)
@@ -548,9 +250,9 @@ count:false
 # Scope
 
 ---
-background-image: url(Images/scope.svg), url(Images/scope_paper2.png)  , url(Images/scope_paper.png)
-background-size: 400px,  500px, 700px
-background-position: 95% 100%,   90% 0%, 0% 10%
+background-image: url(Images/scope.svg), url(Images/scope_paper2.png), url(Images/scope_paper.png)
+background-size: 400px, 500px, 700px
+background-position: 95% 100%, 90% 0%, 0% 10%
 count:false
 
 # Scope
@@ -569,7 +271,7 @@ background-size: 400px, 120px
 background-position: 95% 100%, 0% 10%
 count:false
 
-# Assess 
+# Standzarized Assessment 
 ---
 background-image: url(Images/assess.svg), url(Images/assess_paper2.png)
 background-size: 400px,  120px
@@ -577,7 +279,7 @@ background-position: 95% 100%, 0% 10%
 count:false
 
 
-# Assess 
+# Standzarized Assessment 
 
 ---
 background-image: url(Images/assess.svg), url(Images/assess_example1.png), url(Images/assess_paper2.png)
@@ -586,7 +288,7 @@ background-position: 95% 100%,  15% 50%, 0% 10%
 count:false
 
 
-# Assess 
+# Standzarized Assessment 
 
 ---
 background-image: url(Images/assess_example2.png), url(Images/assess.svg), url(Images/assess_example1.png)  , url(Images/assess_paper2.png)
@@ -596,7 +298,7 @@ count:true
 
 
 
-# Assess 
+# Standzarized Assessment 
 
 
 ---
@@ -605,7 +307,7 @@ background-size: 700px
 background-position: 50% 20% 
 
 
-# Improvements 
+# Standarized Improvements
 
 &lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
 
@@ -613,65 +315,10 @@ background-position: 50% 20%
 
 .font130[
 
-1. Improvements at the paper level 
+1. Improvements at the paper level (e.g., improve documentation following [TIER's protocols](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation))
 2. Improvements at the display-item level  
 3. Specific future improvements   
  ]
----
-
-background-image: url(Images/improve.svg)
-background-size: 300px
-background-position: 0% 100% 
-
-
-# Improvements: Paper-level
-
-.font140[
-- Use version control software (Git/Github).
-- Improve documentation: comments, indentations, object names, etc.   
-- Re-organize the reproduction package into a set of folders and sub-folders that follow [standardized best practices](https://www.projecttier.org/tier-protocol/specifications/#overview-of-the-documentation), and add a master script that executes all the code in order, with no further modifications. [See AEA's reproduction template](https://github.com/AEADataEditor/replication-template).  
-- Literate programming environment (e.g., Jupyter notebooks, RMarkdown)
-- Re-write code using a differenet statistical software (ideally open source, like R, Python, or Julia).
-- Set up a computing capsule (e.g., [Binder](https://mybinder.org/) and [Code Ocean](https://codeocean.com/)).
-]
----
-background-image: url(Images/improve.svg)
-background-size: 300px
-background-position: 0% 100% 
-
-# Improvements: Display item-level 
-&lt;/br&gt;
-
-.font120[
-- Adding missing raw data: files or meta-data  
-  - Example: "Add raw temperature and relative humidity data"
-- Adding missing analytic data files
-  - Example: "Copy the row files from Data folder into new `Analysis\trade cost\Input`"
-- Adding missing analysis or cleaning code
-  - Example: "Replaced broken Wald bootstrap code with updated code/command"
-- Debugging code  
-  - Example:  "was counting each group 4 times in round 1, so fixed that"
-
-]
----
-background-image: url(Images/improve.svg)
-background-size: 300px
-background-position: 0% 100% 
-
-# Improvements: future possible 
-
-We ask reproducer to leave concise and actionable tasks for other reproducers in the future. 
-
-Example 1: 
-&gt;"Revise the .aml and .bat code scripts to reflect reorganized structure"
-
-
-Example 2: 
-&gt; "Provide data and codes generating the other two figures in the paper, which are not given in the replication file."
-
-
-Example 3: 
-&gt; "Table 3 can be reproduced identically from the [...] analytic data files. I was not able to reproduce the analytic data files due to lack of access to ArcGIS software, but the code scripts and raw data files [...] are included in the reproduction package."
 
 ---
 background-image: url(Images/robust.svg)
@@ -696,10 +343,12 @@ background-size: 300px, 500px
 background-position: 0% 100%, 100% 60%  
 
 # Robustness
-
+.font120[
 **Robustness checks:** any possible change in a computational choice, both in data analysis and data cleaning
+]
 --
 
+.font110[
 .pull-left[
 **Reasonable specifications** ([Simonsohn et. al., 2018](https://urisohn.com/sohn_files/wp/wordpress/wp-content/uploads/Paper-Specification-curve-2018-11-02.pdf)): 
 
@@ -708,44 +357,17 @@ background-position: 0% 100%, 100% 60%
  3. Not redundant with other specifications in the set.
 
 Reproducers will be able to record two types of contributions: 
-
 - Mapping the universe of robustness checks
 - Proposing a specific robustness check
 ]
----
-background-image: url(Images/robust.svg)
-background-size: 400px
-background-position: 95% 95%
-
-# Robustness &amp; Reproducibility
-
-.pull-left[
-Robustness with level 1
-
-&lt;img src="Images/robustness_lvl0.svg" width="60%" style="display: block; margin: auto;" /&gt;
-
-Robustness with levels 5-9
-
-&lt;img src="Images/robustness checks.svg" width="60%" style="display: block; margin: auto;" /&gt;
-
-]
-
-.pull-left[
-Robustness with levels 2-4
-
-&lt;img src="Images/robustness_lvl2_4.svg" width="60%" style="display: block; margin: auto;" /&gt;
-
-
-Robustness with level 10
-
-&lt;img src="Images/robustness_lvl10.svg" width="60%" style="display: block; margin: auto;" /&gt;
 ]
 ---
 background-image:  url(Images/completed_repro1.png)
 background-size:   450px
 background-position:  0% 0%   
 count:false
-# Completed Reproduction: [Example](https://www.socialsciencereproduction.org/reproductions/40/published/index)
+# .font90[Completed Reproduction: Generate Knowledge and Get Credit]
+
 
 
 ---
@@ -753,14 +375,14 @@ background-image: url(Images/completed_repro2.png), url(Images/completed_repro1.
 background-size:  300px, 450px
 background-position:  35% 0%, 0% 0%   
 count:false
-# Completed Reproduction: [Example](https://www.socialsciencereproduction.org/reproductions/40/published/index)
+# .font90[Completed Reproduction: Generate Knowledge and Get Credit]
 
 ---
 background-image: url(Images/completed_repro3.png) ,url(Images/completed_repro2.png), url(Images/completed_repro1.png)
 background-size:  600px ,  300px, 450px
 background-position:  100% 10%, 35% 0%, 0% 0%   
 count:true
-# Completed Reproduction: [Example](https://www.socialsciencereproduction.org/reproductions/40/published/index)
+# .font90[Completed Reproduction: Generate Knowledge and Get Credit]
 
 .pull-right[
 
@@ -769,170 +391,12 @@ count:true
  
  - **Share it:** Original authors, instructors, other researchers, add it to your CV
  - **Discuss it:** Discourse forum for reproductions
- - **Cite it:**    Reproduction DOI coming soon
+ - **Cite it:**    Each reproduction has a citable DOI
+ - [Example here](https://www.socialsciencereproduction.org/reproductions/40/published/index)
  ]
 
 ]
 
-
----
-
-# Promoting a Constructive Exchange 
-
-#### 1 - Contacting the original author(s) when there is no reproduction package
-#### 2 - Contacting the original author(s) to request specific missing items of a reproduction package
-#### 3 - Asking for additional guidance when some materials have been shared  
-#### 4 - Response when the original author has refused to share due to *undisclosed reasons*   
-#### 5 - Response when the original author has refused to share due to legal or ethical restrictions of the data
-#### 6 - Contacting the original author to share the results of your reproduction exercise
-#### 7 - Responding to hostile responses from original authors
-
-#### Under development: sample responses form authors to reproducers
----
-
-
-# .font80[Example 1: There is no reproduction package]
-
-.font70[
-&gt;**Subject:** Reproduction package for `[“Title of the paper”]`
-
-&gt;Dear Dr. `[Lastname of Corresponding Author]`,
-&gt;
-&gt; I am contacting you to request a reproduction package for your paper titled `[Title]` which was published in `[Reference]`. A reproduction package may contain (raw and/or analytic) data, code, and other documentation that makes it possible to reproduce paper. Would you be able to share any of these items?
-&gt;
-&gt;I am a `[position]` at `[Institution]`, and I would like to reproduce the results, tables, and other figures using the reproduction materials mentioned above. I have chosen this paper because `[add context ...]`. Unfortunately, I was not able to locate any of these materials on the journal website, Dataverse `[or other data and code repositories]`, or in your website.
-&gt;
-&gt;I will record the result of my reproduction attempt on ACRE [...]. With your permission, I will also record the materials you share with me, which would allow access for other reproducers and avoid repeated requests directed to you. Please let me know if there are any legal or ethical restrictions that apply to all or parts of the reproduction materials so that I can take that into consideration during this exercise.
-&gt;
-&gt;In addition to your response above, would you be available to respond to future (non-repetitive) inquiries from me or other reproducers conducting an ACRE excercise? Though your cooperation with my and/or any future request would be extremely helpful, please note that you are *not required to comply*.
-
-&gt;Since I am required to complete this project by `[date]`, I would appreciate your response by `[deadline]`.
-&gt;
-&gt;Let me know if you have any questions. Please also feel free to contact my supervisor/instructor `[Name (email)]` for further details on this exercise. Thank you in advance for your help!
-&gt;
-&gt;Best regards,  
-&gt;`[Reproducer]`
-]
-
----
-count:false
-
-# .font80[Example 1: There is no reproduction package]
-
-.font70[
-&gt;**Subject:** Reproduction package for `[“Title of the paper”]`
-
-&gt;Dear Dr. `[Lastname of Corresponding Author]`,
-&gt;
-&gt; I am contacting you to request a reproduction package for your paper titled `[Title]` which was published in `[Reference]`. A reproduction package may contain (raw and/or analytic) data, code, and other documentation that makes it possible to reproduce paper. Would you be able to share any of these items?
-&gt;
-&gt;I am a `[position]` at `[Institution]`, and I would like to reproduce the results, tables, and other figures using the reproduction materials mentioned above. I have chosen this paper because `[add context ...]`. **Unfortunately, I was not able to locate any of these materials on the journal website, Dataverse `[or other data and code repositories]`, or in your website**.
-&gt;
-&gt;**I will record the result of my reproduction attempt on ACRE [...]. With your permission, I will also record the materials you share with me, which would allow access for other reproducers and avoid repeated requests directed to you. Please let me know if there are any legal or ethical restrictions that apply to all or parts of the reproduction materials so that I can take that into consideration during this exercise.**
-&gt;
-&gt;In addition to your response above, would you be available to respond to future (non-repetitive) inquiries from me or other reproducers conducting an ACRE excercise? **Though your cooperation with my and/or any future request would be extremely helpful, please note that you are *not required to comply*.**
-
-&gt;Since I am required to complete this project by `[date]`, I would appreciate your response by `[deadline]`.
-&gt;
-&gt;Let me know if you have any questions. Please also feel free to contact my supervisor/instructor `[Name (email)]` for further details on this exercise. Thank you in advance for your help!
-&gt;
-&gt;Best regards,  
-&gt;`[Reproducer]`
-]
-
----
-
-# .font80[Example 1: Following up on additional materials]
-
-**Template email:**  
-
-&gt;**Subject:** Clarification for reproduction materials for `[“Title of the paper”]`  
-
-&gt;Dear Dr. `[Lastname of Corresponding Author]`,
-&gt;
-&gt;Thank you for sharing the materials. They have been immensely helpful for my work.
-&gt;
-&gt;Unfortunately, I ran into a few issues as I delved into the reproduction exercise, and I think your guidance would be helpful in resolving them. `[Describe the issues and how you have tried to resolve them. Describe whatever files or parts of the data or code are missing. Refer to examples 1 and 2 below for more details]`.  
-&gt;  
-&gt;Thank you in advance for your help.
-&gt;  
-&gt;Best regards,  
-&gt;`[Reproducer]`  
-
----
-count:false
-# .font80[Example 1: Following up on additional materials]
-
-**Template email:**  
-
-&gt;**Subject:** Clarification for reproduction materials for `[“Title of the paper”]`  
-
-&gt;Dear Dr. `[Lastname of Corresponding Author]`,
-&gt;
-&gt;Thank you for sharing the materials. They have been immensely helpful for my work.
-&gt;
-&gt;Unfortunately, I ran into a few issues as I delved into the reproduction exercise, and I think your guidance would be helpful in resolving them. **`[Describe the issues and how you have tried to resolve them. Describe whatever files or parts of the data or code are missing. Refer to examples 1 and 2 below for more details]`**.  
-&gt;  
-&gt;Thank you in advance for your help.
-&gt;  
-&gt;Best regards,  
-&gt;`[Reproducer]`  
-
-
----
-
-# An example of well described issues:
-
-.font80[
-&gt;Specifically, I am attempting to reproduce OUTPUT X (e.g., table 1, figure 3). I found that the following components are required to reproduce to reproduce OUTPUT X:     
-
-```md
-         OUTPUT X
-            └───[code] formatting_table1.R
-                ├───output1_part1.txt  
-                |   └───[code] output_table1.do           
-                |       └───[data] analysis_data01.csv
-                |          └───[code] data_cleaning01.R*
-                |             └───[data] UNKNOWN
-                └───output1_part2.txt  
-                    └───[code] output_table2.do           
-                        └───[data] analysis_data02.csv
-                           └───[code] data_cleaning02.R
-                              └───[data] admin_01raw.csv* 
-```
-
-&gt;I have marked with an asterisk (\*) the items that I could not find in the reproduction materials: data_cleaning01.R and admin_01raw.csv. After accessing these files, I will also be able to identify the name of the raw data set required to obtain output1_part1.txt. This is to let you know that I may need to contact you again if I cannot find this file (labeled as UNKNOWN above) in the reproduction materials.
-&gt;
-&gt;I understand that this request will require some work for you or somebody in your research group, but I want to assure you that I will add these missing files to the reproduction package for your paper on the ACRE platform. Doing this will ensure that you will not be asked twice for the same missing file.
-]
-
----
-count:false 
-
-# An example of well described issues:
-
-.font80[
-&gt;Specifically, I am attempting to reproduce OUTPUT X (e.g., table 1, figure 3). I found that the following components are required to reproduce to reproduce OUTPUT X:     
-
-```md
-         OUTPUT X
-            └───[code] formatting_table1.R
-                ├───output1_part1.txt  
-                |   └───[code] output_table1.do           
-                |       └───[data] analysis_data01.csv
-*               |          └───[code] data_cleaning01.R*
-*               |             └───[data] UNKNOWN
-                └───output1_part2.txt  
-                    └───[code] output_table2.do           
-                        └───[data] analysis_data02.csv
-                           └───[code] data_cleaning02.R
-*                             └───[data] admin_01raw.csv* 
-```
-
-&gt;I have marked with an asterisk (\*) the items that I could not find in the reproduction materials: **data_cleaning01.R** and **admin_01raw.csv**. After accessing these files, I will also be able to identify the name of the raw data set required to obtain output1_part1.txt. This is to let you know that I may need to contact you again if I cannot find this file (labeled as **UNKNOWN** above) in the reproduction materials.
-&gt;
-&gt;I understand that this request will require some work for you or somebody in your research group, but I want to assure you that I will add these missing files to the reproduction package for your paper on the ACRE platform. **Doing this will ensure that you will not be asked twice for the same missing file.**
-]
 
 ---
 background-image:  url(Images/use1.png)
@@ -998,7 +462,6 @@ background-image: url(Images/metrics3.png)
 background-size:  contain
 count:true
 # Who Is Using The SSRP?
-
 
 
 ---
